@@ -7,7 +7,7 @@
 
 local config_path = os.getenv("BEHANSA_REPOSITORY")
 if config_path ~= nil then
-    package.path = package.path .. ";" .. config_path .. "/Script/Editor/?.lua"
+    package.path = package.path .. ";" .. config_path .. "?.lua"
 else
     print("Unable to find Behansa repository path environment variable")
     return
