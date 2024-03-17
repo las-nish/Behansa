@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Behansa IDE
+Comment=Behansa IDE
+Icon=/PathToRepo/Asset/Icon.png
+Exec="/PathToRepo/Script/Linux.sh" %f
+Terminal=false
+Categories=Development;IDE;
+StartupNotify=true
