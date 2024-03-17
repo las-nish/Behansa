@@ -3,8 +3,6 @@
 local M = {}
 
 function M.initialize()
-    local config_path = require("file")
-
     vim.cmd("let g:session_menu = 1")
     vim.cmd("let g:session_command_aliases = 1")
     vim.cmd("let g:session_default_name='_'")
