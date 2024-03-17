@@ -9,8 +9,8 @@ function M.Perform()
     require("keymap.plugin").set_plugin_keymaps()
     require("keymap.ladder").set_ladder_keymaps()
 
-    require("plugin.packer").configure_packages()
     require("plugin.packer").initialize_packages()
+    require("plugin.packer").configure_packages()
 
     vim.api.nvim_create_autocmd(
         "VimEnter",
