@@ -44,7 +44,7 @@ function M.center_text()
         "",
         "Behansa IDE v1.0.0",
         "",
-        "Developed by Lasan ( x.com/las_nish )"
+        "An Opensource Project from Tvative Opensource ( https://tvative.com )"
     }
 
     local width = vim.api.nvim_win_get_width(0)
