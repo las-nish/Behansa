@@ -11,7 +11,7 @@ local mux = wezterm.mux
 return {
 	-- Set Default Program as NeoVim
 
-	default_prog = { 'nvim', '-u', 'NONE' },
+	default_prog = { 'nvim' },
 
 	-- Set Font to JetBrains Mono
 
