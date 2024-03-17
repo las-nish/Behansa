@@ -1,0 +1,13 @@
+# Ignore Directories
+
+node_modules/
+
+Binary/Linux/Editor
+Binary/Linux/Terminal/Wezterm
+Session/
+
+# Ignore Files
+
+package-lock.json
+
+# Ignore Files by Type
