@@ -1,0 +1,8 @@
+{
+  "name": "behansa",
+  "scripts": {
+    "linux:setup:behansa": "git pull && cp -r Script/Editor/* ~/.config/nvim/",
+    "linux:setup:terminal:wezterm": "git pull && cp -r Script/Terminal/Wezterm/.wezterm.lua ~/.wezterm.lua",
+    "linux:setup:neovim:packer": "git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  }
+}
