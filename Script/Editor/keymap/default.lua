@@ -1,23 +1,61 @@
 local M = {}
 
 function M.set_default_keymaps()
+    vim.api.nvim_set_keymap("n", "<C-x>", '"+x', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<C-x>", '"+x', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("c", "<C-x>", '"+x', {noremap = true, silent = true})
+
+    vim.cmd([[
+        if has("clipboard")
+            vnoremap <C-x> "+x
+            vnoremap <S-Del> "+x
+        endif
+    ]])
+
+    vim.api.nvim_set_keymap("n", "<C-c>", '"+y', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<C-c>", '"+y', {noremap = true, silent = true})
     vim.api.nvim_set_keymap("v", "<C-c>", '"+y', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "<C-Insert>", '"+y', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<C-Insert>", '"+y', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("v", "<C-Insert>", '"+y', {noremap = true, silent = true})
 
     vim.api.nvim_set_keymap("n", "<C-v>", '"+p', {noremap = true, silent = true})
     vim.api.nvim_set_keymap("i", "<C-v>", "<C-r>+", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "<S-Insert>", '"+gP', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<S-Insert>", '"+gP', {noremap = true, silent = true})
 
-    vim.api.nvim_set_keymap("v", "<C-x>", '"+x', {noremap = true, silent = true})
+    vim.cmd([[
+        cnoremap <C-v> <C-R>+
+        cnoremap <S-Insert> <C-R>+
+    ]])
+
+    vim.cmd(
+        [[
+            if 1
+                exe 'inoremap <script> <C-V> <C-G>u' . paste#paste_cmd['i']
+                exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
+            endif
+        ]]
+    )
+
+    vim.api.nvim_set_keymap("i", "<S-Insert>", "<C-V>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("v", "<S-Insert>", "<C-V>", {noremap = true, silent = true})
+
+    vim.api.nvim_set_keymap("n", "<C-a>", "gggH<C-O>G", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<C-a>", "<C-O>gg<C-O>gH<C-O>G", {noremap = true, silent = true})
+    vim.cmd(
+        [[
+            cnoremap <C-a> <C-C>gggH<C-O>G
+            onoremap <C-a> <C-C>gggH<C-O>G
+            snoremap <C-a> <C-C>gggH<C-O>G
+            xnoremap <C-a> <ESC>ggVG
+        ]]
+    )
 
     vim.api.nvim_set_keymap("n", "<C-z>", "u", {noremap = true, silent = true})
-    vim.api.nvim_set_keymap("i", "<C-z>", "<C-o>u", {noremap = true, silent = true})
-
-    vim.api.nvim_set_keymap("n", "<C-y>", "<C-r>", {noremap = true, silent = true})
-    vim.api.nvim_set_keymap("i", "<C-y>", "<C-o><C-r>", {noremap = true, silent = true})
-
-    vim.api.nvim_set_keymap("n", "<A-z>", ":set wrap!<CR>", {noremap = true, silent = true})
-    vim.api.nvim_set_keymap("i", "<A-z>", "<Esc>:set wrap!<CR>i", {noremap = true, silent = true})
-
-    vim.api.nvim_set_keymap("n", "<C-a>", "ggVG", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<C-z>", "<C-O>u", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "<C-y>", "<C-R>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("i", "<C-y>", "<C-O><C-R>", {noremap = true, silent = true})
 
     vim.api.nvim_set_keymap("n", "<C-s>", ":update<CR>", {noremap = true, silent = true})
     vim.api.nvim_set_keymap("i", "<C-s>", "<Esc>:update<CR>i", {noremap = true, silent = true})
