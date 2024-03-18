@@ -25,9 +25,7 @@ function M.center_text()
         "",
         "┌────────────────────────────────────────────────────────┐",
         "│                                                        │",
-        "│   🌀  New File                                     n   │",
-        "│                                                        │",
-        "│   🔮  Open Folder                                  f   │",
+        "│   🌀  New File                                     i   │",
         "│                                                        │",
         "│   🚀  Projects                                     p   │",
         "│                                                        │",
@@ -86,8 +84,6 @@ function M.welcome_screen()
     vim.api.nvim_buf_set_keymap(0, "n", "i", ":enew<CR><CR>", {silent = true, noremap = true})
     vim.api.nvim_buf_set_keymap(0, "n", "o", ":enew<CR><CR>", {silent = true, noremap = true})
 
-    -- vim.api.nvim_buf_set_keymap(0, 'n', 'n', ':set filetype?<CR>', {silent = true, noremap = true})
-    -- vim.api.nvim_buf_set_keymap(0, 'n', 'f', ':echo "Pressed f"<CR>', {silent = true, noremap = true})
     vim.api.nvim_buf_set_keymap(0, "n", "p", ":OpenSession<CR>", {})
     vim.api.nvim_buf_set_keymap(0, "n", "u", ":PackerUpdate<CR><CR>", {})
     vim.api.nvim_buf_set_keymap(0, "n", "s", ':lua require("base.help").ShortcutKeys()<CR>', {})
