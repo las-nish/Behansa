@@ -92,19 +92,7 @@ Unchanged Standard Shortcuts
 Unchanged Plugin Shortcuts
 --------------------------
 
-Pressing Ctrl + N
-    - Function: Selects the same word under the cursor across the document.
-    - Mode: This shortcut is typically used in Normal mode.
-    - Usage: 
-        - Place the cursor over a word you wish to select.
-        - Press Ctrl + N to select the word.
-        - Subsequent presses of Ctrl + N will add the next instance of the word to the selection, allowing for multiple selections of the same word throughout the document.
-
-Pressing Ctrl + Up Arrow or Down Arrow
-    - Function: Creates multiple carets (cursors) above or below the current line.
-    - Mode: This shortcut can be used in various modes, but its primary utility is observed in Normal and Insert modes.
-    - Usage:
-        - Press Ctrl + Up Arrow to add an additional caret on the line above the current line.
-        - Press Ctrl + Down Arrow to add an additional caret on the line below the current line.
-        - You can press these shortcuts multiple times to add multiple carets, allowing you to write or edit text in several places simultaneously.
-        - This functionality is especially useful for making the same edit on consecutive lines quickly.
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+│ <C-n>               │ Select instances of the same word for multiple selections.            | n                │
+│ <C-Up/Down>         │ Multiple carets to be selected up or down.                            │ n                │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
