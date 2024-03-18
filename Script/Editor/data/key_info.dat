@@ -94,5 +94,5 @@ Unchanged Plugin Shortcuts
 
 ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
 │ <C-n>               │ Select instances of the same word for multiple selections.            | n                │
-│ <C-Up/Down>         │ Multiple carets to be selected up or down.                            │ n                │
+│ <C-up/down>         │ Multiple carets to be selected up or down.                            │ n                │
 └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
