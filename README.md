@@ -1,1 +1,1 @@
-# Behansa IDE
+# Behansa Editor

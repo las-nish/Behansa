@@ -1,4 +1,4 @@
--- Behansa IDE
+-- Behansa Editor
 --
 -- Copyright (c) 2024 Tvative
 -- All Rights Reserved

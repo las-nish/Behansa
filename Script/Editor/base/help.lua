@@ -1,7 +1,7 @@
 local M = {}
 
 function M.ShowHelp()
-    print("Behansa IDE Help Suite\n")
+    print("Behansa IEditorDE Help Suite\n")
 end
 
 function M.ShortcutKeys()
