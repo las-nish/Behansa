@@ -1,8 +1,8 @@
 local M = {}
 
 function M.set_default_options()
-    vim.g.mapleader = " " -- Set ladder
-    vim.g.maplocalleader = " " -- Set ladder
+    vim.g.mapleader = " " -- Set leader
+    vim.g.maplocalleader = " " -- Set leader
 
     vim.opt.relativenumber = true -- Show relative line numbers
     vim.opt.number = true -- Show absolute line number on the current line
