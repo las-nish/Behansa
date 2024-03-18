@@ -42,6 +42,7 @@ function M.initialize_packages()
 
             -- Packages for Productivity
 
+            use "github/copilot.vim"
             use "Exafunction/codeium.vim"
             use "lewis6991/gitsigns.nvim"
             use "nvim-neo-tree/neo-tree.nvim"
