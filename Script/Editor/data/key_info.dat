@@ -1,0 +1,86 @@
+The types or modes are
+    1. Normal (n)
+    2. Insert (i)
+    3. Visual (v)
+    4. Command-line (c)
+    5. Operator (o)
+    6. Select (s)
+    7. Visual&Select (x)
+
+Custom Standard Shortcuts:
+
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+│ <C-x>               │ Cut the selected text to the clipboard.                               │ n, i, c, x       │
+│ <S-Del>             │ Cut the selected text to the clipboard. (if clipboard is available)   │ x                │
+│ <C-c>               │ Copy the selected text to the clipboard.                              │ n, i, x          │
+│ <C-i>               │ Copy the selected text to the clipboard.                              │ n, i, x          │
+│ <C-v>               │ Paste the clipboard content.                                          │ n, i, c          │
+│ <S-i>               │ Paste the clipboard content with automatic formatting.                │ n, i, c, x       │
+│ <C-a>               │ Select all text in the current buffer.                                │ n, i, c, o, s, x │
+│ <C-z>               │ Undo the last action.                                                 │ n, i             │
+│ <C-y>               │ Redo the last undone action.                                          │ n, i             │
+│ <C-s>               │ Save the current buffer.                                              │ n, i             │
+│ <C-S-s>             │ Save all open buffers.                                                │ n, i             │
+│ <C-q>               │ Close the current window.                                             │ n, i             │
+│ <A-z>               │ Toggle line wrapping on and off.                                      │ n, i             │
+│ <A-t>               │ Open a new tab.                                                       │ n, i             │
+│ <A-q>               │ Close the current tab.                                                │ n, i             │
+│ <A-Right>, <A-Left> │ Navigate to the next or previous tab.                                 │ n, i             │
+│ <A-j/l/i/k>         │ Navigate between windows in the left, right, up, and down directions. │ n, i             │
+│ <A-a/d/w/s>,        │ Resize the current window vertically or horizontally.                 │ n, i             │
+│ <A-1> to <A-9>      │ Switch to a specific tab by number.                                   │ n                │
+│ <C-t>               │ Toggle between the current and last tab.                              │ n                │
+│ <C-A-j>, <C-A-l>    │ Move the current tab to the left or right.                            │ n                │
+│ <C-S-s>             │ Save the current session.                                             │ n, i             │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+
+Custom Plugin Shortcuts:
+
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+│ <A-S-n>             │ Toggle the NeoTree file explorer in a floating window.                │ n, i             │
+│ <A-S-b>             │ Toggle the NeoTree buffer explorer in a floating window.              │ n, i             │
+│ <A-S-g>             │ Toggle the NeoTree Git status explorer in a floating window.          │ n, i             │
+│ <C-`>               │ Toggle a floating terminal window.                                    │ n, i             │
+│ <C-f>               │ Open the Telescope picker.                                            │ n, i             │
+│ <C-o>               │ Open the Telescope file finder.                                       │ n, i             │
+│ <C-r>               │ Open the Telescope fuzzy finder within the current buffer.            │ n, i             │
+│ <A-o>               │ Toggle the SymbolsOutline plugin.                                     │ n, i             │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+
+Custom Plugin Ladder Shortcuts:
+
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+│ \asave              │ Toggle auto-saving functionality.                                     │ n                │
+│ \wspace             │ Toggle visibility of whitespace characters.                           │ n                │
+│ \cspace             │ Strip trailing whitespaces from the current file.                     │ n                │
+│ \gitwdiff           │ Toggle visibility of word diffs in the current Git repository.        │ n                │
+│ \gitblame           │ Toggle Git blame for the current line.                                │ n                │
+│ \gitsigns           │ Toggle Git signs in the gutter.                                       │ n                │
+│ \gitnumhl           │ Toggle line number highlighting for changed lines in Git.             │ n                │
+│ \gitlinehl          │ Toggle line highlighting for changed lines in Git.                    │ n                │
+│ \mason              │ Open the Mason package manager interface.                             │ n                │
+│ \masonu             │ Update packages managed by Mason.                                     │ n                │
+│ \masonl             │ View the Mason log.                                                   │ n                │
+│ \pumlp              │ Open the current PlantUML diagram.                                    │ n                │
+│ \mdp                │ Start the Markdown preview.                                           │ n                │
+│ \mdps               │ Stop the Markdown preview.                                            │ n                │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+
+Theme Changing Ladder Shortcuts:
+
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+│ \light              │ Switch to the light color scheme.                                     │ n                │
+│ \dark               │ Switch to the dark color scheme.                                      │ n                │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+
+External Application Ladder Shortcuts:
+
+┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+│ \gterm              │ Open GNOME Terminal.                                                  │ n                │
+│ \tilix              │ Open Tilix terminal emulator.                                         │ n                │
+│ \explorer           │ Open the current directory in Nautilus file manager.                  │ n                │
+└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+
+Unchanged Standard Shortcuts:
+
+Unchanged Plugin Shortcuts:
