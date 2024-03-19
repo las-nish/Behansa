@@ -9,6 +9,8 @@
 
 **Behansa** is a minimalist, Neovim-based code editor designed to run seamlessly within the terminal environment. Embracing the future of code editing, Behansa integrates all major features expected in a modern code editor, alongside advanced Language Server Protocol (LSP) support. By incorporating built-with-AI capabilities, including GitHub Copilot support, Behansa is poised to redefine the coding experience. Currently available in public preview, Behansa invites **developers** to explore its innovative features and contribute to its journey.
 
+![Main Screenshot](.readme/8.png)
+
 ## Features
 
 - **Neovim-based:** Leverages the extensibility of Neovim for a powerful and customizable editing experience.
