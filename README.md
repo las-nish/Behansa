@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Behansa</h1>
-  <p>Ther Minimalist Cross Platform-Code Editor</p>
+  <p>Ther Minimalist Cross-Platform Code Editor</p>
 </div>
 
 [![Lua](https://img.shields.io/badge/Made%20with%20Lua-blue.svg?style=for-the-badge&logo=lua)](https://lua.org)
