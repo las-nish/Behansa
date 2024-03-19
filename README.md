@@ -11,6 +11,8 @@
 
 ![Main Screenshot](.readme/8.png)
 
+Click [here](Screenshot.md) to view more screenshots of the code editor in action.
+
 ## Features
 
 - **Neovim-based:** Leverages the extensibility of Neovim for a powerful and customizable editing experience.
