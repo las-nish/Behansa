@@ -10,6 +10,8 @@
   │                                                              │
   └──── Software is like Sex, It's better when it's free ────────┘
 
+  (Press "q" to exit, or press Enter to continue)
+
   ◎ Open a saved session                  : Type '\project' in Normal mode (n)
   ◎ Update installed packages             : Type '\update' in Normal mode (n)
   ◎ Show keyboard shortcuts               : Type '\key' in Normal mode (n)
