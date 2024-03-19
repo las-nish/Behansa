@@ -1,6 +1,12 @@
 local M = {}
 
 function M.set_leader_keymaps()
+    -- Internal
+
+    vim.api.nvim_set_keymap("n", "\\key", ":lua require('base.help').ShortcutKeys()<CR>", {noremap = true, silent = true})
+
+    -- External
+
     vim.api.nvim_set_keymap("n", "\\gterm", ":!gnome-terminal &<CR>", {noremap = true, silent = true})
     vim.api.nvim_set_keymap("n", "\\tilix", ":!tilix &<CR>", {noremap = true, silent = true})
     vim.api.nvim_set_keymap("n", "\\explorer", ":!nautilus ./ &<CR>", {noremap = true, silent = true})
