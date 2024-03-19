@@ -40,10 +40,13 @@ function M.initialize_packages()
             use "mrded/nvim-lsp-notify"
             use "rktjmp/lush.nvim"
 
-            -- Packages for Productivity
+            -- Packages for AI
 
             use "github/copilot.vim"
-            use "Exafunction/codeium.vim"
+            -- use "Exafunction/codeium.vim"
+
+            -- Packages for Productivity
+
             use "lewis6991/gitsigns.nvim"
             use "nvim-neo-tree/neo-tree.nvim"
             use "nvim-lua/plenary.nvim"
