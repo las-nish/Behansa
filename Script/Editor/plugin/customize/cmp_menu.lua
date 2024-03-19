@@ -26,7 +26,6 @@ function M.initialize()
                     ["<CR>"] = cmp.mapping.confirm({select = false})
                 }
             ),
-            -- Sources for autocompletion
 
             sources = cmp.config.sources(
                 {
