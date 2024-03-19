@@ -10,10 +10,11 @@
   │                                                              │
   └──── Software is like Sex, It's better when it's free ────────┘
 
-  ◎ Open a saved session      : Type '\project' in Normal mode (n)
-  ◎ Update installed packages : Type '\update' in Normal mode (n)
-  ◎ Show keyboard shortcuts   : Type '\key' in Normal mode (n)
-  ◎ Show help                 : Type '\help' in Normal mode (n)
+  ◎ Open a saved session                  : Type '\project' in Normal mode (n)
+  ◎ Update installed packages             : Type '\update' in Normal mode (n)
+  ◎ Show keyboard shortcuts               : Type '\key' in Normal mode (n)
+  ◎ Show help                             : Type '\help' in Normal mode (n)
+  ◎ Open Internal Configuration Directory : Type '\config' in Normal mode (n)
 
   The types or modes are
       1. Normal (n)

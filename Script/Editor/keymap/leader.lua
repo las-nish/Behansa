@@ -7,6 +7,7 @@ function M.set_leader_keymaps()
     vim.api.nvim_set_keymap("n", "\\update", ":PackerUpdate<CR>", {noremap = true, silent = true})
     vim.api.nvim_set_keymap("n", "\\help", ":lua require('base.help').ShowHelp()<CR>", {noremap = true, silent = true})
     vim.api.nvim_set_keymap("n", "\\key", ":lua require('base.help').ShortcutKeys()<CR>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "\\config", ":lua vim.cmd(':cd " .. os.getenv("BEHANSA_CONFIGURATION") .. "')<CR>", {noremap = true, silent = true})
 
     -- External
 

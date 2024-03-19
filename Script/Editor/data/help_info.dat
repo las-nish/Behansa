@@ -5,8 +5,9 @@
   streamlined editing experience. Below are some helpful commands and information
   to get you started:
 
-  1. Open projects   : Type '\project' in Normal mode (n)
-  2. Update packages : Type '\update' in Normal mode (n)
+  1. Open projects                : Type '\project' in Normal mode (n)
+  2. Update packages              : Type '\update' in Normal mode (n)
+  3. Open Configuration Directory : Type '\config' in Normal mode (n)
 
   Note: Behansa Minimalist Editor is compatible with Neovim and can be customized using
         Lua or Vimscript. To configure using Lua, navigate to the 'lua' directory within
