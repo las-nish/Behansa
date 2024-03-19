@@ -1,125 +1,142 @@
-The types or modes are
-    1. Normal (n)
-    2. Insert (i)
-    3. Visual (v)
-    4. Command-line (c)
-    5. Operator (o)
-    6. Select (s)
-    7. Visual&Select (x)
 
-Custom Standard Shortcuts
--------------------------
+  ┌──────────────────────────────────────────────────────────────┐
+  │                                                              │
+  │  ██████╗ ███████╗██╗  ██╗ █████╗ ███╗   ██╗███████╗ █████╗   │
+  │  ██╔══██╗██╔════╝██║  ██║██╔══██╗████╗  ██║██╔════╝██╔══██╗  │
+  │  ██████╔╝█████╗  ███████║███████║██╔██╗ ██║███████╗███████║  │
+  │  ██╔══██╗██╔══╝  ██╔══██║██╔══██║██║╚██╗██║╚════██║██╔══██║  │
+  │  ██████╔╝███████╗██║  ██║██║  ██║██║ ╚████║███████║██║  ██║  │
+  │  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝  │
+  │                                                              │
+  └──── Software is like Sex, It's better when it's free ────────┘
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ <C-x>               │ Cut the selected text to the clipboard.                               │ n, i, c, x       │
-│ <S-Del>             │ Cut the selected text to the clipboard. (if clipboard is available)   │ x                │
-│ <C-c>               │ Copy the selected text to the clipboard.                              │ n, i, x          │
-│ <C-i>               │ Copy the selected text to the clipboard.                              │ n, i, x          │
-│ <C-v>               │ Paste the clipboard content.                                          │ n, i, c          │
-│ <S-i>               │ Paste the clipboard content with automatic formatting.                │ n, i, c, x       │
-│ <C-a>               │ Select all text in the current buffer.                                │ n, i, c, o, s, x │
-│ <C-z>               │ Undo the last action.                                                 │ n, i             │
-│ <C-y>               │ Redo the last undone action.                                          │ n, i             │
-│ <C-s>               │ Save the current buffer.                                              │ n, i             │
-│ <C-S-s>             │ Save all open buffers.                                                │ n, i             │
-│ <C-q>               │ Close the current window.                                             │ n, i             │
-│ <A-z>               │ Toggle line wrapping on and off.                                      │ n, i             │
-│ <A-t>               │ Open a new tab.                                                       │ n, i             │
-│ <A-q>               │ Close the current tab.                                                │ n, i             │
-│ <A-Right>, <A-Left> │ Navigate to the next or previous tab.                                 │ n, i             │
-│ <A-j/l/i/k>         │ Navigate between windows in the left, right, up, and down directions. │ n, i             │
-│ <A-a/d/w/s>,        │ Resize the current window vertically or horizontally.                 │ n, i             │
-│ <A-1> to <A-9>      │ Switch to a specific tab by number.                                   │ n                │
-│ <C-t>               │ Toggle between the current and last tab.                              │ n                │
-│ <C-A-j>, <C-A-l>    │ Move the current tab to the left or right.                            │ n                │
-│ <C-S-s>             │ Save the current session.                                             │ n, i             │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  ◎ Open a saved session      : Type '\project' in Normal mode (n)
+  ◎ Update installed packages : Type '\update' in Normal mode (n)
+  ◎ Show keyboard shortcuts   : Type '\key' in Normal mode (n)
+  ◎ Show help                 : Type '\help' in Normal mode (n)
 
-Custom Plugin Shortcuts
------------------------
+  The types or modes are
+      1. Normal (n)
+      2. Insert (i)
+      3. Visual (v)
+      4. Command-line (c)
+      5. Operator (o)
+      6. Select (s)
+      7. Visual&Select (x)
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ <A-S-n>             │ Toggle the NeoTree file explorer in a floating window.                │ n, i             │
-│ <A-S-b>             │ Toggle the NeoTree buffer explorer in a floating window.              │ n, i             │
-│ <A-S-g>             │ Toggle the NeoTree Git status explorer in a floating window.          │ n, i             │
-│ <C-`>               │ Toggle a floating terminal window.                                    │ n, i             │
-│ <C-f>               │ Open the Telescope picker.                                            │ n, i             │
-│ <C-o>               │ Open the Telescope file finder.                                       │ n, i             │
-│ <C-r>               │ Open the Telescope fuzzy finder within the current buffer.            │ n, i             │
-│ <A-o>               │ Toggle the SymbolsOutline plugin.                                     │ n, i             │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  Custom Standard Shortcuts
+  -------------------------
 
-Custom Plugin Leader Shortcuts
-------------------------------
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ <C-x>               │ Cut the selected text to the clipboard.                               │ n, i, c, x       │
+  │ <S-Del>             │ Cut the selected text to the clipboard. (if clipboard is available)   │ x                │
+  │ <C-c>               │ Copy the selected text to the clipboard.                              │ n, i, x          │
+  │ <C-i>               │ Copy the selected text to the clipboard.                              │ n, i, x          │
+  │ <C-v>               │ Paste the clipboard content.                                          │ n, i, c          │
+  │ <S-i>               │ Paste the clipboard content with automatic formatting.                │ n, i, c, x       │
+  │ <C-a>               │ Select all text in the current buffer.                                │ n, i, c, o, s, x │
+  │ <C-z>               │ Undo the last action.                                                 │ n, i             │
+  │ <C-y>               │ Redo the last undone action.                                          │ n, i             │
+  │ <C-s>               │ Save the current buffer.                                              │ n, i             │
+  │ <C-S-s>             │ Save all open buffers.                                                │ n, i             │
+  │ <C-q>               │ Close the current window.                                             │ n, i             │
+  │ <A-z>               │ Toggle line wrapping on and off.                                      │ n, i             │
+  │ <A-t>               │ Open a new tab.                                                       │ n, i             │
+  │ <A-q>               │ Close the current tab.                                                │ n, i             │
+  │ <A-Right>, <A-Left> │ Navigate to the next or previous tab.                                 │ n, i             │
+  │ <A-j/l/i/k>         │ Navigate between windows in the left, right, up, and down directions. │ n, i             │
+  │ <A-a/d/w/s>,        │ Resize the current window vertically or horizontally.                 │ n, i             │
+  │ <A-1> to <A-9>      │ Switch to a specific tab by number.                                   │ n                │
+  │ <C-t>               │ Toggle between the current and last tab.                              │ n                │
+  │ <C-A-j>, <C-A-l>    │ Move the current tab to the left or right.                            │ n                │
+  │ <C-S-s>             │ Save the current session.                                             │ n, i             │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ \asave              │ Toggle auto-saving functionality.                                     │ n                │
-│ \wspace             │ Toggle visibility of whitespace characters.                           │ n                │
-│ \cspace             │ Strip trailing whitespaces from the current file.                     │ n                │
-│ \gitwdiff           │ Toggle visibility of word diffs in the current Git repository.        │ n                │
-│ \gitblame           │ Toggle Git blame for the current line.                                │ n                │
-│ \gitsigns           │ Toggle Git signs in the gutter.                                       │ n                │
-│ \gitnumhl           │ Toggle line number highlighting for changed lines in Git.             │ n                │
-│ \gitlinehl          │ Toggle line highlighting for changed lines in Git.                    │ n                │
-│ \mason              │ Open the Mason package manager interface.                             │ n                │
-│ \masonu             │ Update packages managed by Mason.                                     │ n                │
-│ \masonl             │ View the Mason log.                                                   │ n                │
-│ \pumlp              │ Open the current PlantUML diagram.                                    │ n                │
-│ \mdp                │ Start the Markdown preview.                                           │ n                │
-│ \mdps               │ Stop the Markdown preview.                                            │ n                │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  Custom Plugin Shortcuts
+  -----------------------
 
-Theme Changing Leader Shortcuts
--------------------------------
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ <A-S-n>             │ Toggle the NeoTree file explorer in a floating window.                │ n, i             │
+  │ <A-S-b>             │ Toggle the NeoTree buffer explorer in a floating window.              │ n, i             │
+  │ <A-S-g>             │ Toggle the NeoTree Git status explorer in a floating window.          │ n, i             │
+  │ <C-`>               │ Toggle a floating terminal window.                                    │ n, i             │
+  │ <C-f>               │ Open the Telescope picker.                                            │ n, i             │
+  │ <C-o>               │ Open the Telescope file finder.                                       │ n, i             │
+  │ <C-r>               │ Open the Telescope fuzzy finder within the current buffer.            │ n, i             │
+  │ <A-o>               │ Toggle the SymbolsOutline plugin.                                     │ n, i             │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ \light              │ Switch to the light color scheme.                                     │ n                │
-│ \dark               │ Switch to the dark color scheme.                                      │ n                │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  Custom Plugin Leader Shortcuts
+  ------------------------------
 
-External Application Leader Shortcuts
--------------------------------------
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ \asave              │ Toggle auto-saving functionality.                                     │ n                │
+  │ \wspace             │ Toggle visibility of whitespace characters.                           │ n                │
+  │ \cspace             │ Strip trailing whitespaces from the current file.                     │ n                │
+  │ \gitwdiff           │ Toggle visibility of word diffs in the current Git repository.        │ n                │
+  │ \gitblame           │ Toggle Git blame for the current line.                                │ n                │
+  │ \gitsigns           │ Toggle Git signs in the gutter.                                       │ n                │
+  │ \gitnumhl           │ Toggle line number highlighting for changed lines in Git.             │ n                │
+  │ \gitlinehl          │ Toggle line highlighting for changed lines in Git.                    │ n                │
+  │ \mason              │ Open the Mason package manager interface.                             │ n                │
+  │ \masonu             │ Update packages managed by Mason.                                     │ n                │
+  │ \masonl             │ View the Mason log.                                                   │ n                │
+  │ \pumlp              │ Open the current PlantUML diagram.                                    │ n                │
+  │ \mdp                │ Start the Markdown preview.                                           │ n                │
+  │ \mdps               │ Stop the Markdown preview.                                            │ n                │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ \gterm              │ Open GNOME Terminal.                                                  │ n                │
-│ \tilix              │ Open Tilix terminal emulator.                                         │ n                │
-│ \explorer           │ Open the current directory in Nautilus file manager.                  │ n                │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  Theme Changing Leader Shortcuts
+  -------------------------------
 
-Unchanged Standard Shortcuts
-----------------------------
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ \light              │ Switch to the light color scheme.                                     │ n                │
+  │ \dark               │ Switch to the dark color scheme.                                      │ n                │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
 
-Jump to a Line:
+  External Application Leader Shortcuts
+  -------------------------------------
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ :{INT}gg            │ Jump to a specific line number.                                       | n                │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ \gterm              │ Open GNOME Terminal.                                                  │ n                │
+  │ \tilix              │ Open Tilix terminal emulator.                                         │ n                │
+  │ \explorer           │ Open the current directory in Nautilus file manager.                  │ n                │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
 
-Fold / Unfold Code:
+  Unchanged Standard Shortcuts
+  ----------------------------
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ zf{INT}             │ Creates a fold from the cursor down # lines.                          | n                │
-│ zf/                 │ String creates a fold from the cursor to string.                      | n                │
-│ zj                  │ Moves the cursor to the next fold.                                    | n                │
-│ zk                  │ Moves the cursor to the previous fold.                                | n                │
-│ za                  │ Toggle a fold at the cursor.                                          | n                │
-│ zo                  │ Opens a fold at the cursor.                                           | n                │
-│ zO                  │ Opens all folds at the cursor.                                        | n                │
-│ zc                  │ Closes a fold under cursor.                                           | n                │
-│ zm                  │ Increases the foldlevel by one.                                       | n                │
-│ zM                  │ Closes all open folds.                                                | n                │
-│ zr                  │ Decreases the foldlevel by one.                                       | n                │
-│ zR                  │ Decreases the foldlevel to zero -- all folds will be open.            | n                │
-│ zd                  │ Deletes the fold at the cursor.                                       | n                │
-│ zE                  │ Deletes all folds.                                                    | n                │
-│ [z                  │ Move to start of open fold.                                           | n                │
-│ ]z                  │ Move to end of open fold.                                             │ n                │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  Jump to a Line:
 
-Unchanged Plugin Shortcuts
---------------------------
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ :{INT}gg            │ Jump to a specific line number.                                       | n                │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
 
-┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
-│ <C-n>               │ Select instances of the same word for multiple selections.            | n                │
-│ <C-up/down>         │ Multiple carets to be selected up or down.                            │ n                │
-└─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+  Fold / Unfold Code:
+
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ zf{INT}             │ Creates a fold from the cursor down # lines.                          | n                │
+  │ zf/                 │ String creates a fold from the cursor to string.                      | n                │
+  │ zj                  │ Moves the cursor to the next fold.                                    | n                │
+  │ zk                  │ Moves the cursor to the previous fold.                                | n                │
+  │ za                  │ Toggle a fold at the cursor.                                          | n                │
+  │ zo                  │ Opens a fold at the cursor.                                           | n                │
+  │ zO                  │ Opens all folds at the cursor.                                        | n                │
+  │ zc                  │ Closes a fold under cursor.                                           | n                │
+  │ zm                  │ Increases the foldlevel by one.                                       | n                │
+  │ zM                  │ Closes all open folds.                                                | n                │
+  │ zr                  │ Decreases the foldlevel by one.                                       | n                │
+  │ zR                  │ Decreases the foldlevel to zero -- all folds will be open.            | n                │
+  │ zd                  │ Deletes the fold at the cursor.                                       | n                │
+  │ zE                  │ Deletes all folds.                                                    | n                │
+  │ [z                  │ Move to start of open fold.                                           | n                │
+  │ ]z                  │ Move to end of open fold.                                             │ n                │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
+
+  Unchanged Plugin Shortcuts
+  --------------------------
+
+  ┌─────────────────────┬───────────────────────────────────────────────────────────────────────┬──────────────────┐
+  │ <C-n>               │ Select instances of the same word for multiple selections.            | n                │
+  │ <C-up/down>         │ Multiple carets to be selected up or down.                            │ n                │
+  └─────────────────────┴───────────────────────────────────────────────────────────────────────┴──────────────────┘
