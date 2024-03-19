@@ -1,8 +1,6 @@
 local M = {}
 
 function M.Perform()
-    require("base.version").show_version()
-
     require("option.default").set_default_options()
 
     require("keymap.default").set_default_keymaps()
@@ -12,14 +10,7 @@ function M.Perform()
     require("plugin.packer").initialize_packages()
     require("plugin.packer").configure_packages()
 
-    vim.api.nvim_create_autocmd(
-        "VimEnter",
-        {
-            callback = function()
-                require("base.welcome").welcome_screen()
-            end
-        }
-    )
+    require("base.welcome").welcome_screen()
 end
 
 return M
