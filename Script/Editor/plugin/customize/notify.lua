@@ -28,7 +28,7 @@ function M.initialize()
     local function readNoteFile(path)
         local file = open(path, "rb")
         if not file then
-            return ' - No Note Detected !\n\n - Create a note file named ".behansa.note" in the $HOME directory'
+            return ' - No Note Detected !\n\n - Create a note file named ".behansa/.note" in the $HOME directory'
         end
 
         local content = file:read "*a"
@@ -36,12 +36,12 @@ function M.initialize()
         return content
     end
 
-    local noteFileContent = readNoteFile(".behansa.note")
+    local noteFileContent = readNoteFile(".behansa/.note")
     vim.notify(
         noteFileContent,
         "info",
         {
-            title = " Note ( .behansa.note )",
+            title = " Note ( .behansa/.note )",
             timeout = 10000
         }
     )
