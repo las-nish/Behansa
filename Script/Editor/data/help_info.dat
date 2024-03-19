@@ -1,0 +1,29 @@
+  Behansa Minimalist Editor Help Guide
+  Version 1.0.0
+
+  Welcome to Behansa Minimalist Editor! This editor is designed to provide a
+  streamlined editing experience. Below are some helpful commands and information
+  to get you started:
+
+  1. Open projects   : Type '\project' in Normal mode (n)
+  2. Update packages : Type '\update' in Normal mode (n)
+
+  Note: Behansa Minimalist Editor is compatible with Neovim and can be customized using
+        Lua or Vimscript. To configure using Lua, navigate to the 'lua' directory within
+        your Neovim configuration folder and edit the Lua files located in the 'Script/Editor/'
+        directory. After making your changes, move the Lua files to your Neovim configuration
+        directory.
+
+  For additional assistance, documentation or to report any issues, please visit the Behansa Minimalist
+  Editor GitHub repository: https://github.com/las-nish/Behansa
+
+  Resources:
+    - NeoVim Documentation (https://neovim.io/doc/)
+    - Lua Documentation (https://www.lua.org/docs.html)
+
+  Thank you for choosing Behansa Minimalist Editor! Happy editing!
+
+  ~ Lasan
+
+  [ GitHub               : github.com/las-nish ]
+  [ X (Formally Twitter) : x.com/las_nish ]
