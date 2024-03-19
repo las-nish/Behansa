@@ -3,7 +3,8 @@ local M = {}
 function M.set_leader_keymaps()
     -- Internal
 
-    vim.api.nvim_set_keymap("n", "\\key", ":lua require('base.help').ShortcutKeys()<CR>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "\\help", ":lua require('base.help').ShortcutKeys()<CR>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "\\key", ":lua require('base.help').ShowHelp()<CR>", {noremap = true, silent = true})
 
     -- External
 
