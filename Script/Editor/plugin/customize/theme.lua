@@ -19,6 +19,7 @@ function M.initialize()
     local c = require("vscode.colors").get_colors()
     require("vscode").setup(
         {
+            style = 'light',
             transparent = false,
             italic_comments = true,
             underline_links = true,
