@@ -1,3 +1,5 @@
+-- https://johncodes.com/posts/2023/02-25-nvim-spell/
+
 local M = {}
 
 function M.set_default_options()
