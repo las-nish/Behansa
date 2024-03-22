@@ -17,8 +17,13 @@ function M.set_leader_keymaps()
 
     -- Theme (bluloco)
 
-    vim.api.nvim_set_keymap("n", "\\light", ":colorscheme bluloco-light<CR>", {noremap = true, silent = true})
-    vim.api.nvim_set_keymap("n", "\\dark", ":colorscheme bluloco-dark<CR>", {noremap = true, silent = true})
+    -- vim.api.nvim_set_keymap("n", "\\light", ":colorscheme bluloco-light<CR>", {noremap = true, silent = true})
+    -- vim.api.nvim_set_keymap("n", "\\dark", ":colorscheme bluloco-dark<CR>", {noremap = true, silent = true})
+
+    -- Theme (vs-code)
+
+    vim.api.nvim_set_keymap("n", "\\light", ":lua require('vscode').load('light')<CR>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap("n", "\\dark", ":lua require('vscode').load('dark')<CR>", {noremap = true, silent = true})
 
     -- Auto save toggle
 

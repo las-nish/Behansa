@@ -30,6 +30,9 @@ function M.set_default_options()
     vim.opt.swapfile = false -- No swap files
     vim.opt.undofile = false -- No undo files
     vim.opt.wrap = false -- Disable word wrap for all windows
+    
+    vim.opt.spelllang = 'en_us' -- Set spelling to en_us
+    vim.opt.spell = true -- Enable spell checking
 
     vim.cmd("behave mswin")
 end

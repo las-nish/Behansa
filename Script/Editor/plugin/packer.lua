@@ -31,6 +31,7 @@ function M.initialize_packages()
 
             use "projekt0n/github-nvim-theme"
             use "uloco/bluloco.nvim"
+            use "Mofiqul/vscode.nvim"
 
             -- Packages for Customization
 
